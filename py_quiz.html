@@ -1,0 +1,129 @@
+<html>
+<head>
+<style type="text/css">
+p
+{
+border-style:solid;
+background-color:00ffff;
+}
+</style>
+<script type="text/javascript">
+function validate()
+{
+var  pyquizmarks=0;
+var a=document.getElementsByName("one");
+/*if(a[0].checked==false && a[1].checked==false && a[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(a[1].checked==true)
+{
+  pyquizmarks+=1;
+  var x=document.getElementById("q1");
+  x.style.color="green";
+}
+else
+{
+  var x=document.getElementById("q1");
+  x.style.color="red";
+}
+var b=document.getElementsByName("two");
+/*if(b[0].checked==false && b[1].checked==false && b[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(b[1].checked==true)
+{
+  pyquizmarks+=1;
+  var x=document.getElementById("q2");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q2");
+  x.style.color="red";
+}
+var c=document.getElementsByName("three");
+/*if(c[0].checked==false && c[1].checked==false && c[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(c[2].checked==true)
+{
+  pyquizmarks+=1;
+  var x=document.getElementById("q3");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q3");
+  x.style.color="red";
+}
+var d=document.getElementsByName("four");
+/*if(d[0].checked==false && d[1].checked==false && d[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(d[0].checked==true)
+{
+  pyquizmarks+=1;
+  var x=document.getElementById("q4");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q4");
+  x.style.color="red";
+}
+var e=document.getElementsByName("five");
+/*if(e[0].checked==false && e[1].checked==false && e[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(e[1].checked==true)
+{
+  pyquizmarks+=1;
+  var x=document.getElementById("q5");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q5");
+  x.style.color="red";
+}
+alert("YOU SCORED"+" "+pyquizmarks+"/"+"5");
+}
+</script>
+</head>
+<body>
+<h1 style="color:orange"><center>WELCOME TO PYTHON PROGRAMMING QUIZ!!!</center></h1>
+<form>
+<p id="q1">1)Which of the following is the key,value pair?</p>
+<input type="radio" name="one" >List<br>
+<input type="radio" name="one" >Dictionary<br>
+<input type="radio" name="one" >Tuple<br>
+<br>
+<br>
+<p id="q2">2)What is the the output?<br>
+l=[2,3,5,7,11]<br>
+print(l[5])</p>
+<input type="radio" name="two" >11<br>
+<input type="radio" name="two" >List index out of bound<br>
+<input type="radio" name="two" >5<br>
+<br>
+<br>
+<p id="q3">
+Name one application for python.
+</p>
+<input type="radio" name="three" >Robotics<br>
+<input type="radio" name="three" >Data Science<br>
+<input type="radio" name="three" >All of these<br>
+<br>
+<br>
+<p id="q4">4)Which is immutable?</p>
+<input type="radio" name="four" >String<br>
+<input type="radio" name="four" >List<br>
+<input type="radio" name="four" >All of these<br>
+<br>
+<br>
+<p id="q5">5)What is the complexity of dictionary?<br>
+</p>
+<input type="radio" name="five" >O(n)<br>
+<input type="radio" name="five" >O(1)<br>
+<input type="radio" name="five" >O(n**2)<br>
+<br>
+<br>
+<h2><center><input type="button" value="PY-EVALUATE" onclick="validate()" style="background-color:green"></center></h2>
+</form>
+</body>
+</html>

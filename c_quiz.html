@@ -1,0 +1,151 @@
+<html>
+<head>
+<style type="text/css">
+p
+{
+border-style:solid;
+background-color:00ffff;
+}
+</style>
+<script type="text/javascript">
+function validate()
+{
+var  cquizmarks=0;
+var a=document.getElementsByName("one");
+/*if(a[0].checked==false && a[1].checked==false && a[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(a[2].checked==true)
+{
+  cquizmarks+=1;
+  var x=document.getElementById("q1");
+  x.style.color="green";
+}
+else
+{
+  var x=document.getElementById("q1");
+  x.style.color="red";
+}
+var b=document.getElementsByName("two");
+/*if(b[0].checked==false && b[1].checked==false && b[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(b[1].checked==true)
+{
+  cquizmarks+=1;
+  var x=document.getElementById("q2");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q2");
+  x.style.color="red";
+}
+var c=document.getElementsByName("three");
+/*if(c[0].checked==false && c[1].checked==false && c[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(c[2].checked==true)
+{
+  cquizmarks+=1;
+  var x=document.getElementById("q3");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q3");
+  x.style.color="red";
+}
+var d=document.getElementsByName("four");
+/*if(d[0].checked==false && d[1].checked==false && d[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(d[1].checked==true)
+{
+  cquizmarks+=1;
+  var x=document.getElementById("q4");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q4");
+  x.style.color="red";
+}
+var e=document.getElementsByName("five");
+/*if(e[0].checked==false && e[1].checked==false && e[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(e[1].checked==true)
+{
+  cquizmarks+=1;
+  var x=document.getElementById("q5");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q5");
+  x.style.color="red";
+}
+alert("YOU SCORED"+" "+cquizmarks+"/"+"5");
+}
+</script>
+</head>
+<body>
+<h1 style="color:brown"><center>WELCOME TO C PROGRAMMING QUIZ!!!</center></h1>
+<form>
+<p id="q1"> 1)What is the output for this program?<br>
+#include&ltstdio.h&gt<br>
+int main()<br>
+{<br>
+int c=2,a=0;<br>
+printf("%d",c/a);<br>
+}<br>
+</p>
+<input type="radio" name="one" >2<br>
+<input type="radio" name="one" >Run time error<br>
+<input type="radio" name="one" >Compile time error<br>
+<br>
+<br>
+<p id="q2">2)Pointer is used for______.</p>
+<input type="radio" name="two" >Storing variable<br>
+<input type="radio" name="two" >Storing variable address<br>
+<input type="radio" name="two" >Point the address<br>
+<br>
+<br>
+<p id="q3">
+3)How many times "Welcome" will be printed?<br>
+#include&ltstdio.h&gt<br>
+int main()<br>
+{<br>
+int k=5;<br>
+for(int i=0;i&ltk/2;i++)<br>
+ printf("WELCOME");<br>
+}<br>
+</p>
+<input type="radio" name="three" >3<br>
+<input type="radio" name="three" >1<br>
+<input type="radio" name="three" >2<br>
+<br>
+<br>
+<p id="q4">4)How many storage classes are there in C?</p>
+<input type="radio" name="four" >3<br>
+<input type="radio" name="four" >4<br>
+<input type="radio" name="four" >2<br>
+<br>
+<br>
+<p id="q5">5)What is the output?<br>
+#include&ltstdio.h&gt<br>
+int main()<br>
+{<br>
+const int a=4;<br>
+for(int i=0;i&lta;i++)<br>
+{<br>
+ printf("%d",a);<br>
+ a+=1;<br>
+}<br>
+}<br>
+</p>
+<input type="radio" name="five" >4567<br>
+<input type="radio" name="five" >4444<br>
+<input type="radio" name="five" >1234<br>
+<br>
+<br>
+<h2><center><input type="button" value="C-EVALUATE" onclick="validate()" style="background-color:green"></center></h2>
+</form>
+</body>
+</html>

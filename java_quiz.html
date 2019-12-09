@@ -1,0 +1,134 @@
+<html>
+<head>
+<style type="text/css">
+p
+{
+border-style:solid;
+background-color:00ffff;
+}
+</style>
+<script type="text/javascript">
+function validate()
+{
+var  javaquizmarks=0;
+var a=document.getElementsByName("one");
+/*if(a[0].checked==false && a[1].checked==false && a[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(a[1].checked==true)
+{
+  javaquizmarks+=1;
+  var x=document.getElementById("q1");
+  x.style.color="green";
+}
+else
+{
+  var x=document.getElementById("q1");
+  x.style.color="red";
+}
+var b=document.getElementsByName("two");
+/*if(b[0].checked==false && b[1].checked==false && b[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(b[1].checked==true)
+{
+  javaquizmarks+=1;
+  var x=document.getElementById("q2");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q2");
+  x.style.color="red";
+}
+var c=document.getElementsByName("three");
+/*if(c[0].checked==false && c[1].checked==false && c[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(c[2].checked==true)
+{
+  javaquizmarks+=1;
+  var x=document.getElementById("q3");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q3");
+  x.style.color="red";
+}
+var d=document.getElementsByName("four");
+/*if(d[0].checked==false && d[1].checked==false && d[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(d[1].checked==true)
+{
+  javaquizmarks+=1;
+  var x=document.getElementById("q4");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q4");
+  x.style.color="red";
+}
+var e=document.getElementsByName("five");
+/*if(e[0].checked==false && e[1].checked==false && e[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(e[2].checked==true)
+{
+  javaquizmarks+=1;
+  var x=document.getElementById("q5");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q5");
+  x.style.color="red";
+}
+alert("YOU SCORED"+" "+javaquizmarks+"/"+"5");
+}
+</script>
+</head>
+<body>
+<h1 style="color:blue"><center>WELCOME TO JAVA PROGRAMMING QUIZ!!!</center></h1>
+<form>
+<p id="q1">1)How many types of inheritance?</p>
+<input type="radio" name="one" >4<br>
+<input type="radio" name="one" >3<br>
+<input type="radio" name="one" >1<br>
+<br>
+<br>
+<p id="q2">2)What is the the output?<br>
+import java.io.*<br>
+public static void main(String args[])<br>
+{<br>
+int a=2,c=0;<br>
+System.out.println(a/c);<br>
+}
+</p>
+<input type="radio" name="two" >2<br>
+<input type="radio" name="two" >java.lang.Arithmetic.zero division error<br>
+<input type="radio" name="two" >0<br>
+<br>
+<br>
+<p id="q3">
+Name the application for java.
+</p>
+<input type="radio" name="three">Applet<br>
+<input type="radio" name="three" >Servlet<br>
+<input type="radio" name="three" >All of these<br>
+<br>
+<br>
+<p id="q4">4)After compilation of java code,what will it become?</p>
+<input type="radio" name="four" >Class code<br>
+<input type="radio" name="four" >Byte code<br>
+<input type="radio" name="four" >None of these<br>
+<br>
+<br>
+<p id="q5">5)Which side belongs to java?<br>
+</p>
+<input type="radio" name="five" >OOP<br>
+<input type="radio" name="five" >Server<br>
+<input type="radio" name="five" >All of these<br>
+<br>
+<br>
+<h2><center><input type="button" value="JAVA-EVALUATE" onclick="validate()" style="background-color:green"></center></h2>
+</form>
+</body>
+</html>

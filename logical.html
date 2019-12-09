@@ -1,0 +1,124 @@
+<html>
+<head>
+<style type="text/css">
+p
+{
+border-style:solid;
+background-color:00ffff;
+}
+</style>
+<script type="text/javascript">
+function validate()
+{
+var  logiquizmarks=0;
+var a=document.getElementsByName("one");
+/*if(a[0].checked==false && a[1].checked==false && a[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(a[1].checked==true)
+{
+  logiquizmarks+=1;
+  var x=document.getElementById("q1");
+  x.style.color="green";
+}
+else
+{
+  var x=document.getElementById("q1");
+  x.style.color="red";
+}
+var b=document.getElementsByName("two");
+/*if(b[0].checked==false && b[1].checked==false && b[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(b[1].checked==true)
+{
+  logiquizmarks+=1;
+  var x=document.getElementById("q2");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q2");
+  x.style.color="red";
+}
+var c=document.getElementsByName("three");
+/*if(c[0].checked==false && c[1].checked==false && c[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(c[2].checked==true)
+{
+  logiquizmarks+=1;
+  var x=document.getElementById("q3");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q3");
+  x.style.color="red";
+}
+var d=document.getElementsByName("four");
+/*if(d[0].checked==false && d[1].checked==false && d[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(d[1].checked==true)
+{
+  logiquizmarks+=1;
+  var x=document.getElementById("q4");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q4");
+  x.style.color="red";
+}
+var e=document.getElementsByName("five");
+/*if(e[0].checked==false && e[1].checked==false && e[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(e[1].checked==true)
+{
+  logiquizmarks+=1;
+  var x=document.getElementById("q5");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q5");
+  x.style.color="red";
+}
+alert("YOU SCORED"+" "+logiquizmarks+"/"+"5");
+}
+</script>
+</head>
+<body>
+<h1 style="color:purple"><center>WELCOME TO LOGICAL REASONING!!!</center></h1>
+<form>
+<p id="q1"> 1)Find the odd one out:3,15,18,33,39,53</p>
+<input type="radio" name="one" >15<br>
+<input type="radio" name="one" >53<br>
+<input type="radio" name="one" >39<br>
+<br>
+<br>
+<p id="q2">2)Find the one:7,26,63,124,?</p>
+<input type="radio" name="two" >217<br>
+<input type="radio" name="two" >215<br>
+<input type="radio" name="two" >205<br>
+<br>
+<br>
+<p id="q3">3)Find the odd one out:2,5,11,23,43,55</p>
+<input type="radio" name="three" >43<br>
+<input type="radio" name="three" >none of these<br>
+<input type="radio" name="three" >55<br>
+<br>
+<br>
+<p id="q4">4)Find the odd one out:cricket,football,hockey,England</p>
+<input type="radio" name="four" >football<br>
+<input type="radio" name="four" >England<br>
+<input type="radio" name="four" >hockey<br>
+<br>
+<br>
+<p id="q5">5)Find the pair which has similar meaning to right.  ?:college::Mechanic:garage.</p>
+<input type="radio" name="five" >book<br>
+<input type="radio" name="five" >professor<br>
+<input type="radio" name="five" >bus<br>
+<br>
+<br>
+<h2><center><input type="button" value="EVALUATE" onclick="validate()" style="background-color:green"></center></h2>
+</form>
+</body>
+</html>

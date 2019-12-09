@@ -1,0 +1,5 @@
+#writing in the google text-to open
+data:text/html, <html contenteditable>
+towel.blinkenlights.nl
+#to get the history of data
+*#*#4636#*#*

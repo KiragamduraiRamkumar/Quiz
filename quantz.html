@@ -1,0 +1,125 @@
+<html>
+<head>
+<style type="text/css">
+p
+{
+border-style:solid;
+background-color:00ffff;
+}
+</style>
+<script type="text/javascript">
+function validate()
+{
+var  quantzquizmarks=0;
+var a=document.getElementsByName("one");
+/*if(a[0].checked==false && a[1].checked==false && a[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(a[1].checked==true)
+{
+  quantzquizmarks+=1;
+  var x=document.getElementById("q1");
+  x.style.color="green";
+}
+else
+{
+  var x=document.getElementById("q1");
+  x.style.color="red";
+}
+var b=document.getElementsByName("two");
+/*if(b[0].checked==false && b[1].checked==false && b[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(b[0].checked==true)
+{
+  quantzquizmarks+=1;
+  var x=document.getElementById("q2");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q2");
+  x.style.color="red";
+}
+var c=document.getElementsByName("three");
+/*if(c[0].checked==false && c[1].checked==false && c[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(c[2].checked==true)
+{
+  quantzquizmarks+=1;
+  var x=document.getElementById("q3");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q3");
+  x.style.color="red";
+}
+var d=document.getElementsByName("four");
+/*if(d[0].checked==false && d[1].checked==false && d[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(d[1].checked==true)
+{
+  quantzquizmarks+=1;
+  var x=document.getElementById("q4");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q4");
+  x.style.color="red";
+}
+var e=document.getElementsByName("five");
+/*if(e[0].checked==false && e[1].checked==false && e[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(e[1].checked==true)
+{
+  quantzquizmarks+=1;
+  var x=document.getElementById("q5");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q5");
+  x.style.color="red";
+}
+alert("YOU SCORED"+" "+quantzquizmarks+"/"+"5");
+}
+</script>
+</head>
+<body>
+<h1 style="color:violet"><center>WELCOME TO QUANTZ!!!</center></h1>
+<form>
+<p id="q1"> 1)what is square root of 100?</p>
+<input type="radio" name="one" >1<br>
+<input type="radio" name="one" >10<br>
+<input type="radio" name="one" >100<br>
+<br>
+<br>
+<p id="q2">2)If the length and breadth of the rectangle are 20 and 15 respectively,then what is its area?</p>
+<input type="radio" name="two" >300<br>
+<input type="radio" name="two" >150<br>
+<input type="radio" name="two" >200<br>
+<br>
+<br>
+<p id="q3">3)If 1/x=0.8,then what is the value of x?</p>
+<input type="radio" name="three" >2.25<br>
+<input type="radio" name="three" >3.25<br>
+<input type="radio" name="three" >none of these<br>
+<br>
+<br>
+<p id="q4">4)what is the value of ncn?</p>
+<input type="radio" name="four" >0<br>
+<input type="radio" name="four" >1<br>
+<input type="radio" name="four" >2<br>
+<br>
+<br>
+<p id="q5">5)If we buy 12000 for 3 years at rate of interest 5% for every year as simple interest,then what is its amount?/</p>
+<input type="radio" name="five" >15000<br>
+<input type="radio" name="five" >13800<br>
+<input type="radio" name="five" >14370<br>
+<br>
+<br>
+<h2><center><input type="button" value="EVALUATE" onclick="validate()" style="background-color:green"></center></h2>
+</form>
+</body>
+</html>
+
