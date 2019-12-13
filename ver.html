@@ -1,0 +1,132 @@
+<html>
+<head>
+<link rel="stylesheet" href="design.css"></link>
+<style type="text/css">
+p
+{
+border-style:solid;
+background-color:00ffff;
+}
+</style>
+<script type="text/javascript">
+function validate()
+{
+var verbalquiz1=0;
+var a=document.getElementsByName("one");
+/*if(a[0].checked==false && a[1].checked==false && a[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(a[0].checked==true)
+{
+  verbalquiz1+=1;
+  var x=document.getElementById("q1");
+  x.style.color="green";
+}
+else
+{
+  var x=document.getElementById("q1");
+  x.style.color="red";
+}
+var b=document.getElementsByName("two");
+/*if(b[0].checked==false && b[1].checked==false && b[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(b[1].checked==true)
+{
+  verbalquiz1+=1;
+  var x=document.getElementById("q2");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q2");
+  x.style.color="red";
+}
+var c=document.getElementsByName("three");
+/*if(c[0].checked==false && c[1].checked==false && c[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(c[0].checked==true)
+{
+  verbalquiz1+=1;
+  var x=document.getElementById("q3");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q3");
+  x.style.color="red";
+}
+var d=document.getElementsByName("four");
+/*if(d[0].checked==false && d[1].checked==false && d[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(d[2].checked==true)
+{
+  verbalquiz1+=1;
+  var x=document.getElementById("q4");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q4");
+  x.style.color="red";
+}
+var e=document.getElementsByName("five");
+/*if(e[0].checked==false && e[1].checked==false && e[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(e[1].checked==true)
+{
+  verbalquiz1+=1;
+  var x=document.getElementById("q5");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q5");
+  x.style.color="red";
+}
+localStorage.setItem("verbal",verbalquiz1);
+window.location.href="v2.html";
+}
+</script>
+</head>
+<body>
+<h1 style="color:red"><center>WELCOME TO VERBAL REASONING</center></h1>
+<form>
+<p id="q1"> 1)I'm _______Indian.</p>
+<input type="radio" name="one" >an<br>
+<input type="radio" name="one" >a<br>
+<input type="radio" name="one" >the<br>
+<br>
+<br>
+<p id="q2">2)He ______ two childs.</p>
+<input type="radio" name="two" >have<br>
+<input type="radio" name="two" >has<br>
+<input type="radio" name="two" >is<br>
+<br>
+<br>
+<p id="q3">3)It was ______ since yesterday.</p>
+<input type="radio" name="three" >raining<br>
+<input type="radio" name="three" >rain<br>
+<input type="radio" name="three" >has rained<br>
+<br>
+<br>
+<p id="q4">4)The cricket match began ______ rain.</p>
+<input type="radio" name="four" >due to<br>
+<input type="radio" name="four" >because of<br>
+<input type="radio" name="four">after<br>
+<br>
+<br>
+<p id="q5">5)I _____ walk in my childhood in the early morning.</p>
+<input type="radio" name="five" >am<br>
+<input type="radio" name="five" >used to<br>
+<input type="radio" name="five" >always<br>
+<br>
+<br>
+<div class="page">
+<a href="ver.html">&laquo;</a>
+<a href="ver.html" class="action">1</a>
+<a  onclick="validate()" href="v2.html">2</a>
+<a href="v3.html">3</a>
+<a href="v3.html">&raquo;</a>
+</div>
+</form>
+</body>
+</html>
