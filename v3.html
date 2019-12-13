@@ -83,7 +83,10 @@ var x=document.getElementById("q15");
   x.style.color="red";
 }
 localStorage.setItem("verbal",verbalquiz3);
-alert("CONGRATS");
+if(verbalquiz3==15)
+   alert("CONGRATS!!! "+"YOU SCORED "+verbalquiz3+"/"+"15");
+else
+   alert("YOU SCORED "+verbalquiz3+"/"+"15");
 }
 </script>
 </head>
