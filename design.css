@@ -1,0 +1,20 @@
+.page
+{
+display:inline-block;
+}
+.page a
+{
+color:blue;
+float:left;
+padding:8px 16px;
+text-decoration:none;
+}
+.page a.action
+{
+background-color:#4CAF50;
+text-color:white;
+}
+.page a:hover:not(.action)
+{
+background-color:#ddd;
+}
