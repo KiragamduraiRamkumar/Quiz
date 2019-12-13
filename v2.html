@@ -1,0 +1,130 @@
+<html>
+<head>
+<link rel="stylesheet" href="design.css">
+<style type="text/css">
+p
+{
+border-style:solid;
+background-color:00ffff;
+}
+</style>
+<script type="text/javascript">
+function validate()
+{
+var verbalquiz2=parseInt(localStorage.getItem("verbal"));
+var a=document.getElementsByName("six");
+/*if(a[0].checked==false && a[1].checked==false && a[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(a[2].checked==true)
+{
+  verbalquiz2+=1;
+  var x=document.getElementById("q6");
+  x.style.color="green";
+}
+else
+{
+  var x=document.getElementById("q6");
+  x.style.color="red";
+}
+var b=document.getElementsByName("seven");
+/*if(b[0].checked==false && b[1].checked==false && b[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(b[0].checked==true)
+{
+  verbalquiz2+=1;
+  var x=document.getElementById("q7");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q7");
+  x.style.color="red";
+}
+var c=document.getElementsByName("eight");
+/*if(c[0].checked==false && c[1].checked==false && c[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(c[1].checked==true)
+{
+  verbalquiz2+=1;
+  var x=document.getElementById("q8");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q8");
+  x.style.color="red";
+}
+var d=document.getElementsByName("nine");
+/*if(d[0].checked==false && d[1].checked==false && d[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(d[2].checked==true)
+{
+  verbalquiz2+=1;
+  var x=document.getElementById("q9");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q9");
+  x.style.color="red";
+}
+var e=document.getElementsByName("ten");
+/*if(e[0].checked==false && e[1].checked==false && e[2].checked==false)
+  alert("PLEASE SELECT ANY ONE OPTION");*/
+if(e[2].checked==true)
+{
+  verbalquiz2+=1;
+  var x=document.getElementById("q10");
+  x.style.color="green";
+}
+else
+{
+var x=document.getElementById("q10");
+  x.style.color="red";
+}
+localStorage.setItem("verbal2",verbalquiz2);
+window.location.href="v3.html";
+}
+</script>
+</head>
+<body>
+<p id="q6">6)Solve as per the direction given:</p>
+<input type="radio" name="six">it is difficult<br>
+<input type="radio" name="six">for anyone<br>
+<input type="radio" name="six">to past time thus<br>
+<input type="radio" name="six">no error<br>
+<br>
+<br>
+<p id="q7">7)Solve as per the direction given:</p>
+<input type="radio" name="seven">i was there<br>
+<input type="radio" name="seven">many a time<br>
+<input type="radio" name="seven">in the past<br>
+<input type="radio" name="seven">no error<br>
+<br>
+<br>
+<p id="q8">8)Choose antonym:CONCEDE</p>
+<input type="radio" name="eight">Grant<br>
+<input type="radio" name="eight">refuse<br>
+<input type="radio" name="eight">accede<br>
+<br>
+<br>
+<p id="q9">9)Choose synonym:DEBACLE</p>
+<input type="radio" name="nine">decline<br>
+<input type="radio" name="nine">disgrace<br>
+<input type="radio" name="nine">collapse<br>
+<br>
+<br>
+<p id="q10">10)Choose the right option for the IDIOM:To smell a rat</p>
+<input type="radio" name="ten">To get the bad smell of a bad dead rat<br>
+<input type="radio" name="ten">To be in a bad mood<br>
+<input type="radio" name="ten">To suspect foul dealings<br>
+<br>
+<br>
+<div class="page">
+<a href="ver.html">&laquo;</a>
+<a href="v2.html" class="action">2</a>
+<a  onclick="validate()" href="v3.html">3</a>
+<a href="v3.html">&raquo;</a>
+</div>
+</body>
+</html>
